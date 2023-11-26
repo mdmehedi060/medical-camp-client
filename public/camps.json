@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "campName": "Adventure Explorers Camp",
+      "image": "adventure_explorers.jpg",
+      "campFees": 350,
+      "scheduledDateTime": "2023-07-15 T10:00:00",
+      "venueLocation": "Forest Ridge Park",
+      "specializedServices": ["Rock Climbing", "Survival Skills"],
+      "healthcareProfessionals": ["Dr. Sarah Thompson", "RN James Anderson"],
+      "targetAudience": "Ages 10-14"
+    },
+    {
+      "id": 2,
+      "campName": "Tech Innovators Workshop",
+      "image": "tech_innovators.jpg",
+      "campFees": 400,
+      "scheduledDateTime": "2023-08-05 T13:30:00",
+      "venueLocation": "Innovation Hub",
+      "specializedServices": ["Programming", "Robotics"],
+      "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+      "targetAudience": "Ages 12-16"
+    },
+    {
+      "id": 3,
+      "campName": "Creative Arts Festival",
+      "image": "creative_arts.jpg",
+      "campFees": 300,
+      "scheduledDateTime": "2023-06-20 T09:45:00",
+      "venueLocation": "City Art Center",
+      "specializedServices": ["Drawing", "Theater Arts"],
+      "healthcareProfessionals": ["Dr. Emily Roberts"],
+      "targetAudience": "Ages 8-12"
+    },
+    {
+      "id": 4,
+      "campName": "Sports Extravaganza",
+      "image": "sports_extravaganza.jpg",
+      "campFees": 250,
+      "scheduledDateTime": "2023-07-10 T14:15:00",
+      "venueLocation": "Sports Arena",
+      "specializedServices": ["Basketball", "Soccer"],
+      "healthcareProfessionals": ["Physiotherapist Lisa Johnson"],
+      "targetAudience": "Ages 6-14"
+    },
+    {
+      "id": 5,
+      "campName": "Nature Discovery Retreat",
+      "image": "nature_discovery.jpg",
+      "campFees": 380,
+      "scheduledDateTime": "2023-06-25 T11:00:00",
+      "venueLocation": "Green Valley Retreat",
+      "specializedServices": ["Bird Watching", "Nature Trails"],
+      "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+      "targetAudience": "Ages 10-16"
+    },
+    {
+      "id": 6,
+      "campName": "STEM Scholars Camp",
+      "image": "stem_scholars.jpg",
+      "campFees": 450,
+      "scheduledDateTime": "2023-08-15 T10:30:00",
+      "venueLocation": "Science Center",
+      "specializedServices": ["Science Experiments", "Math Challenges"],
+      "healthcareProfessionals": ["Dr. Amanda Wilson"],
+      "targetAudience": "Ages 14-18"
+    },
+    {
+      "id": 7,
+      "campName": "Dance Fusion Workshop",
+      "image": "dance_fusion.jpg",
+      "campFees": 320,
+      "scheduledDateTime": "2023-07-05 T15:00:00",
+      "venueLocation": "Dance Studio",
+      "specializedServices": ["Hip Hop", "Ballet"],
+      "healthcareProfessionals": [],
+      "targetAudience": "Ages 8-16"
+    },
+    {
+      "id": 8,
+      "campName": "Wildlife Safari Experience",
+      "image": "wildlife_safari.jpg",
+      "campFees": 380,
+      "scheduledDateTime": "2023-06-30 T09:00:00",
+      "venueLocation": "Safari Park",
+      "specializedServices": ["Animal Tracking", "Conservation Workshops"],
+      "healthcareProfessionals": ["Veterinarian Dr. Alex Turner"],
+      "targetAudience": "Ages 12-18"
+    },
+    {
+      "id": 9,
+      "campName": "Culinary Creations Camp",
+      "image": "culinary_creations.jpg",
+      "campFees": 300,
+      "scheduledDateTime": "2023-07-12 T12:45:00",
+      "venueLocation": "Culinary Institute",
+      "specializedServices": ["Cooking Classes", "Food Art"],
+      "healthcareProfessionals": [],
+      "targetAudience": "Ages 10-14"
+    },
+    {
+      "id": 10,
+      "campName": "Leadership Development Retreat",
+      "image": "leadership_development.jpg",
+      "campFees": 420,
+      "scheduledDateTime": "2023-08-10 T11:15:00",
+      "venueLocation": "Leadership Center",
+      "specializedServices": ["Team Building", "Public Speaking"],
+      "healthcareProfessionals": ["Psychologist Dr. Mark Collins"],
+      "targetAudience": "Ages 16-20"
+    },
+    {
+      "id": 11,
+      "campName": "Mystery Adventure Camp",
+      "image": "mystery_adventure.jpg",
+      "campFees": 370,
+      "scheduledDateTime": "2023-07-20 T14:30:00",
+      "venueLocation": "Mystery Mansion",
+      "specializedServices": ["Detective Skills", "Escape Rooms"],
+      "healthcareProfessionals": [],
+      "targetAudience": "Ages 12-16"
+    },
+    {
+      "id": 12,
+      "campName": "Music Harmony Workshop",
+      "image": "music_harmony.jpg",
+      "campFees": 340,
+      "scheduledDateTime": "2023-07-08 T13:00:00",
+      "venueLocation": "Music Academy",
+      "specializedServices": ["Instrumental Training", "Song Composition"],
+      "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+      "targetAudience": "Ages 10-18"
+    }
+  ]
+  
