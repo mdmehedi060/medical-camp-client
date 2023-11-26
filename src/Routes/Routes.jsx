@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/campDetails',
-          element:<CampDetails></CampDetails>
+          element:<PrivateRout><CampDetails></CampDetails></PrivateRout>
         },
         {
           path:'/availableCamps',

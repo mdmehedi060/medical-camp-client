@@ -7,9 +7,7 @@ const {id,campName,image,campFees,scheduledDateTime,venueLocation,specializedSer
        
 
 <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img className={image} alt="" />
-    </a>
+<img className="w-full h-[200px]" src={image} alt="camp" />
     <div className="p-5">
         <a href="#">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{campName}</h5>
@@ -20,9 +18,13 @@ const {id,campName,image,campFees,scheduledDateTime,venueLocation,specializedSer
         <a href="">$ {campFees}</a>
         <a href="">{scheduledDateTime}</a>
        </div>
+       <div className="flex">
+        <p>{venueLocation}</p>
+        <p>{targetAudience}</p>
+       </div>
     </div>
 <Link to={`/camp-details/${id}`}>
-<button className="btn btn-accent ">Details</button>
+<button className="btn btn-success w-3/4 my-4 ml-12">Details</button>
 </Link>
      
        
