@@ -1,0 +1,148 @@
+[
+    {
+        "campId": 1,
+        "campName": "Adventure Explorers Camp",
+        "image": "https://i.ibb.co/whT9Jw4/2.jpg",
+        "campFees": 350,
+        "scheduledDateTime": "2023-07-15 T10:00:00",
+        "venueLocation": "Forest Ridge Park",
+        "specializedServices": ["Rock Climbing", "Survival Skills"],
+        "healthcareProfessionals": ["Dr. Sarah Thompson", "RN James Anderson"],
+        "targetAudience": "Ages 10-14",
+        "comprehensiveDescription": "Adventure Explorers Camp is a thrilling outdoor experience for kids aged 10-14. Set against the picturesque backdrop of Forest Ridge Park, this camp offers a perfect blend of excitement and learning. Participants will delve into the world of rock climbing, honing their skills and conquering new heights. The survival skills workshop adds an educational touch, teaching essential techniques for outdoor challenges. The dedicated healthcare team, consisting of Dr. Sarah Thompson and RN James Anderson, guarantees the well-being of every camper, making this an unforgettable adventure."
+    },
+    {
+        "campId": 2,
+        "campName": "Tech Innovators Workshop",
+        "image": "https://i.ibb.co/2qWR3fw/3.jpg",
+        "campFees": 400,
+        "scheduledDateTime": "2023-08-05 T13:30:00",
+        "venueLocation": "Innovation Hub",
+        "specializedServices": ["Programming", "Robotics"],
+        "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+        "targetAudience": "Ages 12-16",
+        "comprehensiveDescription": "Tech Innovators Workshop is a dynamic exploration of programming and robotics for young minds aged 12-16. Held at the cutting-edge Innovation Hub, this workshop provides a hands-on learning experience in the world of technology. Dr. Michael Adams and RN Rachel Miller lead the healthcare team, ensuring a secure and stimulating environment for participants."
+    },
+    {
+        "campId": 3,
+        "campName": "Creative Arts Festival",
+        "image": "https://i.ibb.co/T2fbFJT/4.jpg",
+        "campFees": 300,
+        "scheduledDateTime": "2023-06-20 T09:45:00",
+        "venueLocation": "City Art Center",
+        "specializedServices": ["Drawing", "Theater Arts"],
+        "healthcareProfessionals": ["Dr. Emily Roberts"],
+        "targetAudience": "Ages 8-12",
+        "comprehensiveDescription": "Creative Arts Festival is a celebration of artistic expression for children aged 8-12. Hosted at the enchanting City Art Center, this festival immerses participants in the world of drawing and theater arts. Dr. Emily Roberts ensures a supportive and safe environment, fostering the creativity of every young artist."
+    },
+    {
+        "campId": 4,
+        "campName": "Sports Extravaganza",
+        "image": "https://i.ibb.co/VpcjcwF/5.jpg",
+        "campFees": 250,
+        "scheduledDateTime": "2023-07-10 T14:15:00",
+        "venueLocation": "Sports Arena",
+        "specializedServices": ["Basketball", "Soccer"],
+        "healthcareProfessionals": ["Physiotherapist Lisa Johnson"],
+        "targetAudience": "Ages 6-14",
+        "comprehensiveDescription": "Sports Extravaganza is a dynamic sports experience for children aged 6-14. Held at the energetic Sports Arena, this camp includes activities like basketball and soccer. Physiotherapist Lisa Johnson ensures the physical well-being of participants, making it a fun and safe environment for sports lovers."
+    },
+    {
+        "campId": 5,
+        "campName": "Nature Discovery Retreat",
+        "image": "https://i.ibb.co/ryqfjrt/6.jpg",
+        "campFees": 380,
+        "scheduledDateTime": "2023-06-25 T11:00:00",
+        "venueLocation": "Green Valley Retreat",
+        "specializedServices": ["Bird Watching", "Nature Trails"],
+        "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+        "targetAudience": "Ages 10-16",
+        "comprehensiveDescription": "Nature Discovery Retreat offers a serene exploration for nature enthusiasts aged 10-16. Hosted at the picturesque Green Valley Retreat, this retreat includes bird watching and nature trails. Dr. Michael Adams and RN Rachel Miller ensure the well-being of participants, creating a harmonious and safe experience in the lap of nature."
+    },
+    {
+        "campId": 6,
+        "campName": "STEM Scholars Camp",
+        "image": "https://i.ibb.co/S5G9VD0/7.jpg",
+        "campFees": 450,
+        "scheduledDateTime": "2023-08-15 T10:30:00",
+        "venueLocation": "Science Center",
+        "specializedServices": ["Science Experiments", "Math Challenges"],
+        "healthcareProfessionals": ["Dr. Amanda Wilson"],
+        "targetAudience": "Ages 14-18",
+        "comprehensiveDescription": "STEM Scholars Camp is an immersive experience for aspiring scientists and mathematicians aged 14-18. Held at the cutting-edge Science Center, this camp offers hands-on experiences in science experiments and math challenges. Dr. Amanda Wilson ensures a stimulating and secure learning environment for participants."
+    },
+    {
+        "campId": 7,
+        "campName": "Dance Fusion Workshop",
+        "image": "https://i.ibb.co/vVmQDct/8.jpg",
+        "campFees": 320,
+        "scheduledDateTime": "2023-07-05 T15:00:00",
+        "venueLocation": "Dance Studio",
+        "specializedServices": ["Hip Hop", "Ballet"],
+        "healthcareProfessionals": ["Psychologist Dr. Mark Collins"],
+        "targetAudience": "Ages 8-16",
+        "comprehensiveDescription": "Dance Fusion Workshop is a rhythmic journey for young dancers aged 8-16. Hosted at the vibrant Dance Studio, this workshop features diverse dance styles such as Hip Hop and Ballet. Psychologist Dr. Mark Collins ensures the emotional well-being of participants, creating a supportive and safe space for creative expression."
+    },
+    {
+        "campId": 8,
+        "campName": "Wildlife Safari Experience",
+        "image": "https://i.ibb.co/ctBH7XN/9.jpg",
+        "campFees": 380,
+        "scheduledDateTime": "2023-06-30 T09:00:00",
+        "venueLocation": "Safari Park",
+        "specializedServices": ["Animal Tracking", "Conservation Workshops"],
+        "healthcareProfessionals": ["Veterinarian Dr. Alex Turner"],
+        "targetAudience": "Ages 12-18",
+        "comprehensiveDescription": "Wildlife Safari Experience is an educational adventure for wildlife enthusiasts aged 12-18. Held at the fascinating Safari Park, this camp includes activities such as animal tracking and conservation workshops. Veterinarian Dr. Alex Turner ensures the well-being of participants and the animals, creating a safe and enlightening environment."
+    },
+    {
+        "campId": 9,
+        "campName": "Culinary Creations Camp",
+        "image": "https://i.ibb.co/GCxyFG9/10.jpg",
+        "campFees": 300,
+        "scheduledDateTime": "2023-07-12 T12:45:00",
+        "venueLocation": "Culinary Institute",
+        "specializedServices": ["Cooking Classes", "Food Art"],
+        "healthcareProfessionals": ["Psychologist Dr. Mark Collins"],
+        "targetAudience": "Ages 10-14",
+        "comprehensiveDescription": "Culinary Creations Camp is a gastronomic journey for aspiring chefs aged 10-14. Hosted at the renowned Culinary Institute, this camp includes cooking classes and the art of food presentation. Psychologist Dr. Mark Collins ensures the well-being of participants, creating a delightful and safe space for culinary exploration."
+    },
+    {
+        "campId": 10,
+        "campName": "Leadership Development Retreat",
+        "image": "https://i.ibb.co/D1F15Lh/11.jpg",
+        "campFees": 420,
+        "scheduledDateTime": "2023-08-10 T11:15:00",
+        "venueLocation": "Leadership Center",
+        "specializedServices": ["Team Building", "Public Speaking"],
+        "healthcareProfessionals": ["Psychologist Dr. Mark Collins"],
+        "targetAudience": "Ages 16-20",
+        "comprehensiveDescription": "Leadership Development Retreat is a transformative experience for aspiring leaders aged 16-20. Held at the prestigious Leadership Center, this retreat includes activities in team building and public speaking. Psychologist Dr. Mark Collins ensures the emotional well-being of participants, creating a supportive and safe environment for leadership development."
+    },
+    {
+        "campId": 11,
+        "campName": "Mystery Adventure Camp",
+        "image": "https://i.ibb.co/3SNthgM/12.jpg",
+        "campFees": 370,
+        "scheduledDateTime": "2023-07-20 T14:30:00",
+        "venueLocation": "Mystery Mansion",
+        "specializedServices": ["Detective Skills", "Escape Rooms"],
+        "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+        "targetAudience": "Ages 12-16",
+        "comprehensiveDescription": "Mystery Adventure Camp is a thrilling experience for young detectives aged 12-16. Hosted at the mysterious Mystery Mansion, this camp includes activities in detective skills and escape rooms. Dr. Michael Adams and RN Rachel Miller ensure the well-being of participants, creating an exciting and safe environment for mystery-solving."
+    },
+    {
+        "campId": 12,
+        "campName": "Music Harmony Workshop",
+        "image": "https://i.ibb.co/swL5XCW/13.jpg",
+        "campFees": 340,
+        "scheduledDateTime": "2023-07-08 T13:00:00",
+        "venueLocation": "Music Academy",
+        "specializedServices": ["Instrumental Training", "Song Composition"],
+        "healthcareProfessionals": ["Dr. Michael Adams", "RN Rachel Miller"],
+        "targetAudience": "Ages 10-18",
+        "comprehensiveDescription": "Music Harmony Workshop is a melodic journey for music enthusiasts aged 10-18. Hosted at the renowned Music Academy, this workshop includes instrumental training and the art of song composition. Dr. Michael Adams and RN Rachel Miller ensure the well-being of participants, creating a melodic and safe space for musical exploration."
+    }
+]
+
+

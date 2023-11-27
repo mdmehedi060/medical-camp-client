@@ -17,14 +17,15 @@ const Navbar = () => {
     }
   const navLinks = (
     <>
-    <li ><Link to='/'>Home</Link></li>
-    <li ><Link to='/campDetails'>Camp Details</Link></li>
-    <li ><Link to='/availableCamps'>Available Camps</Link></li>
+    <li ><Link className='font-bold text-orange-400' to='/'>Home</Link></li>
+    <li ><Link className='font-bold text-orange-400' to='/camp-details/:id'>Camp Details</Link></li>
+    <li ><Link className='font-bold text-orange-400' to='/availableCamps'>Available Camps</Link></li>
+    <li ><Link className='font-bold text-orange-400' to='/dashboard'>Dashboard</Link></li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-400 shadow-lg mt-4">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -52,7 +53,7 @@ const Navbar = () => {
         </div>
        <div className='flex'>
         <img className='h-[50px] w-[50px]' src="https://i.ibb.co/RcK2jx3/logo.png" alt="" />
-       <a className="btn btn-ghost font-bold text-3xl text-emerald-600">Shopna Medical Camp</a>
+       <a className="btn btn-ghost font-bold text-2xl text-emerald-600">Shopna Medical Camp</a>
        </div>
       </div>
       <div className="navbar-center hidden lg:flex">

@@ -24,7 +24,8 @@ const Details = () => {
        </div>
     </div>
 <Link to={`/camp-details/${id}`}>
-<button className="btn btn-accent ">Details</button>
+<button className="btn btn-accent ">Join
+Camp Button</button>
 </Link>
      
        

@@ -1,19 +1,13 @@
 
-import  { Link, useLoaderData }  from 'react-router-dom';
-import SectionTitle from '../../Components/SectionTitle/SectionTitle';
+import { Link } from 'react-router-dom';
 
-
-const CampDetails = () => {
-    const details=useLoaderData();
-    console.log(details);
+const AvailableCard = ({camp}) => {
     const {_id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,
-        targetAudience,comprehensiveDescription}= details;
+        targetAudience,comprehensiveDescription}= camp;
     return (
-        <div className='my-6 '>
-           <SectionTitle heading={"Camp Details"} subHeading={"Please Join This Camp"}></SectionTitle>
-           <div>
-           <div className='mx-auto'>
-            <div className="max-w-sm  bg-base-100 my-6  rounded-lg shadow-lg">
+        <div>
+     
+        <div className="max-w-sm  bg-base-100 my-6  rounded-lg shadow-lg">
 <img className="w-full h-[200px]" src={image} alt="camp" />
  <div className="p-5">
      <a href="#">
@@ -35,17 +29,15 @@ const CampDetails = () => {
         <p><span className='font-bold'>Description:</span> {comprehensiveDescription}</p>
     </div>
  </div>
-<Link to={`/joincamp/${_id}`}>
-<button className="btn btn-success w-3/4 my-4 ml-12">Join Camp</button>
+<Link to={`/camp-details/${_id}`}>
+<button className="btn btn-success w-3/4 my-4 ml-12">Details</button>
 </Link>
   
     
  
-</div> 
-        </div>
-           </div>
-        </div>
+</div>
+     </div>
     );
 };
 
-export default CampDetails;
+export default AvailableCard;
