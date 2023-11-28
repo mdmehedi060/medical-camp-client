@@ -7,7 +7,7 @@ const Camps = () => {
     const [camps,setCamps]=useState();
 const [isShow,setIsShow]= useState(false)
     useEffect(()=>{
-        fetch('http://localhost:5000/camps')
+        fetch('http://localhost:5000/addcamp')
         .then(res=>res.json())
         .then(data=>setCamps(data))
     },[])
@@ -19,7 +19,7 @@ const [isShow,setIsShow]= useState(false)
             ></SectionTitle>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-10">
                 {
-                    isShow ? camps?.map(camp=><CampsCard key={camp.id} camp={camp}></CampsCard>)
+                    isShow ? camps?.map(camp=><CampsCard key={camp._id} camp={camp}></CampsCard>)
                     :camps?.slice(0, 6).map(camp=><CampsCard key={camp._id} camp={camp}></CampsCard>)
                 }
             </div>

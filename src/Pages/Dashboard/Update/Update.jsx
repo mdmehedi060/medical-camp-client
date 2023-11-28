@@ -3,10 +3,13 @@ import { useLoaderData } from 'react-router-dom';
 import  Swal  from 'sweetalert2';
 import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 
+
 const Update = () => {
     const update = useLoaderData();
     console.log(update);
     const { _id,title,category,shortdiscription,longdiscription,photo } = update;
+    
+
 
     const handleUpdateBlog=event=>{
         event.preventDefault();
@@ -21,8 +24,9 @@ const Update = () => {
    const updateCamp={title,category,shortdiscription,longdiscription,photo}
    console.log(updateCamp);
     
-    //    send data to the server
-    fetch(`http://localhost:5000/addcamp/${_id}`,{
+  
+
+    fetch(`http://localhost:5000/joincamp/${_id}`,{
         method:'PUT',
         headers:{
             'content-type' : 'application/json'

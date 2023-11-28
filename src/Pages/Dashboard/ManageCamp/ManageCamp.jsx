@@ -5,12 +5,12 @@ import { FaTrashAlt, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const ManageCamp = () => {
-    const [addcamp,refetch]=useCamp();
-    const totalFees= addcamp.reduce((total,item)=>total + item.campFees,0);
+    const [joincamp,refetch]=useCamp();
+    const totalFees= joincamp.reduce((total,item)=>total + item.campFees,0);
     const axiosSecure = useAxiosSecure();
     
     const handleUpdate = user =>{
-      axiosSecure.patch(`/addcamp/organizer/${addcamp._id}`)
+      axiosSecure.put(`/joincamp/organizer/${user?._id}`)
       .then(res =>{
           console.log(res.data)
           if(res.data.modifiedCount > 0){
@@ -39,7 +39,7 @@ const ManageCamp = () => {
       }).then((result) => {
           if (result.isConfirmed) {
     
-            axiosSecure.delete(`/addcamp/${id}`)
+            axiosSecure.delete(`/joincamp/${id}`)
                   .then(res => {
                       if (res.data.deletedCount > 0) {
                           refetch();
@@ -56,7 +56,7 @@ const ManageCamp = () => {
     return (
         <div>
         <div className="flex justify-evenly">
-        <h2 className="text-3xl ">Manage Profile:{addcamp.length}</h2>
+        <h2 className="text-3xl ">Manage Profile:{joincamp.length}</h2>
         <h2 className="text-3xl ">Total Manage Fees: {totalFees}</h2>
      
         </div>
@@ -77,7 +77,7 @@ const ManageCamp = () => {
   </thead>
   <tbody>
     {
-      addcamp.map((item,index)=>   <tr key={item._id}>
+      joincamp.map((item,index)=>   <tr key={item._id}>
           <th>{index + 1}</th>
           <td><img className='w-[60px] h-[60px] rounded-lg' src={item.image} alt="" /></td>
           <td>{item.campName}</td>

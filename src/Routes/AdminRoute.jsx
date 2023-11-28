@@ -1,20 +1,21 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from './../assets/Hooks/useAuth';
-import useAdmin from './../assets/Hooks/useAdmin';
+import useOrganizer from "../assets/Hooks/useOrganizer";
+
 
 
 
 
 const AdminRoute = ({ children }) => {
     const { user, loading } = useAuth();
-    const [isAdmin, isAdminLoading] = useAdmin();
+    const [isOrganizer, isOrganizerLoading] = useOrganizer();
     const location = useLocation();
 
-    if (loading || isAdminLoading) {
+    if (loading || isOrganizerLoading) {
         return <progress className="progress w-56"></progress>
     }
 
-    if (user && isAdmin) {
+    if (user && isOrganizer) {
         return children;
     }
 

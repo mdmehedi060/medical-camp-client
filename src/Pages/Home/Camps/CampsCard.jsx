@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 
 const CampsCard = ({camp}) => {
-const {id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,targetAudience}= camp;
+const {_id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,targetAudience}= camp;
     return (
        
 
-<div className="max-w-sm h-[500px] bg-teal-100   rounded-lg shadow-lg">
+<div className="max-w-sm h-[500px] bg-white   rounded-lg shadow-lg">
 <img className="w-full h-[200px]" src={image} alt="camp" />
     <div className="p-5">
         <a href="#">
@@ -25,7 +25,7 @@ const {id,campName,image,campFees,scheduledDateTime,venueLocation,specializedSer
         <p>{targetAudience}</p>
        </div>
     </div>
-<Link to={`/camp-details/${id}`}>
+<Link to={`/camp-details/${_id}`}>
 <button className="btn btn-success w-3/4 my-4 ml-12">Details</button>
 </Link>
      

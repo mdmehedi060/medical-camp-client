@@ -1,32 +1,19 @@
 import { NavLink, Outlet } from "react-router-dom";
-import {
-  FaAd,
-  FaBook,
-  FaCalendar,
-  FaEnvelope,
-  FaHome,
-  FaList,
-  FaOrcid,
-  FaSearch,
-  FaShoppingCart,
-  FaStore,
-  FaUsers,
-  FaUtensils,
-} from "react-icons/fa";
-// import useCart from "../../Hooks/useCart";
-// import useAdmin from './../../assets/Hooks/useAdmin';
+import {FaAd,FaCalendar,FaHome,FaOrcid,FaSearch,FaShoppingCart} from "react-icons/fa";
+import useOrganizer from './../../assets/Hooks/useOrganizer';
+// import useCamp from './../../assets/Hooks/useCamp';
 
 const Dashboard = () => {
-  //   const [cart]=useCart();
+    // const [addcamp]=useCamp();
   // TODO:get isAdmin value from the database
-  const isAdmin = true;
+  const [isOrganizer] = useOrganizer();
   return (
     <div className="flex">
       <div className="w-56 min-h-screen bg-green-200">
         <ul className="menu text-2xl">
           {
           
-          isAdmin ? (
+          isOrganizer ? 
             <>
             <li>
                 <NavLink to="/dashboard/organizerProfile">
@@ -52,12 +39,12 @@ const Dashboard = () => {
                   Manage Registerde Camp
                 </NavLink>
               </li>
-             
+              
             </>
-          ) 
+           
           :
           
-           (
+           
             <>
               <li>
                 <NavLink to="/dashboard/profileManagement">
@@ -71,6 +58,7 @@ const Dashboard = () => {
                   Registered Camp
                 </NavLink>
               </li>
+              
               <li>
                 <NavLink to="/dashboard/paymentHistory">
                   <FaShoppingCart></FaShoppingCart>
@@ -85,7 +73,9 @@ const Dashboard = () => {
               </li>
            
             </>
-          )}
+          
+          
+          }
           {/* Shared navlinks */}
 
           <div className="divider text-black font-extrabold"></div>
@@ -96,10 +86,7 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/campDetails">
-              <FaSearch />
-              Camp Details
-            </NavLink>
+            
           </li>
           <li>
             <NavLink to="/availableCamps">

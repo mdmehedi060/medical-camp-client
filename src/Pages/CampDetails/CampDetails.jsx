@@ -1,13 +1,78 @@
 
 import  { Link, useLoaderData }  from 'react-router-dom';
 import SectionTitle from '../../Components/SectionTitle/SectionTitle';
+import useCamp from './../../assets/Hooks/useCamp';
+import { useLocation, useNavigate } from 'react-router-dom';
+import useAuth from './../../assets/Hooks/useAuth';
+import Swal from 'sweetalert2';
+import useAxiosSecure from './../../assets/Hooks/useAxiosSecure';
 
 
 const CampDetails = () => {
     const details=useLoaderData();
     console.log(details);
-    const {_id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,
-        targetAudience,comprehensiveDescription}= details;
+    const {_id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,targetAudience,comprehensiveDescription}= details;
+    const {user}=useAuth();
+    const navigate=useNavigate();
+    const location=useLocation();
+    const axiosSecure=useAxiosSecure();
+    const [refatch]=useCamp();
+
+
+    const handelJoinCamp = () => {
+        if(user && user.email){
+          // sent cart item to the database
+    
+    const campItem={
+    campId:_id,
+    email: user.email,
+    campName,
+    image,
+    campFees,
+    scheduledDateTime,
+    venueLocation,
+    specializedServices,
+    healthcareProfessionals,
+    targetAudience,
+    comprehensiveDescription
+    }
+    axiosSecure.post('/joincamp',campItem)
+    .then(res=>{
+      console.log(res.data);
+      if(res.data.insertedId){
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${campName} added to your camp`,
+          showConfirmButton: false,
+          timer: 1500
+        });
+        // refatch the card update the item count
+        refatch();
+      }
+    })
+        }
+        else{
+          Swal.fire({
+            title: "You are not Login",
+            text: "Please Login to add to the cart!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, Login!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+            //  send to the navigate
+            navigate('/login',{state:{from:location}})
+            }
+          });
+        }
+      };
+   
+   
+   
+   
     return (
         <div className='my-6 '>
            <SectionTitle heading={"Camp Details"} subHeading={"Please Join This Camp"}></SectionTitle>
@@ -35,8 +100,9 @@ const CampDetails = () => {
         <p><span className='font-bold'>Description:</span> {comprehensiveDescription}</p>
     </div>
  </div>
-<Link to={`/joincamp/${_id}`}>
-<button className="btn btn-success w-3/4 my-4 ml-12">Join Camp</button>
+<Link >
+<button onClick={handelJoinCamp} className="btn btn-outline w-3/4 mb-4 my-4 ml-12 border-0 border-b-4 flex items-center
+             text-green-400 mx-auto">Join Camp</button>
 </Link>
   
     

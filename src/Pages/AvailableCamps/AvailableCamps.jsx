@@ -6,7 +6,7 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 
 const AvailableCamps = () => {
     const camps=useLoaderData();
-    console.log(camps);
+    // console.log(camps);
    
     return (
         <div className="my-6">

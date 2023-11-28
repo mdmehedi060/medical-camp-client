@@ -1,12 +1,12 @@
 
 import { Link } from 'react-router-dom';
 import userDefaultPic from '../../assets/User/user.png'
-
 import useAuth from './../../assets/Hooks/useAuth';
+
 
 const Navbar = () => {
   const {user,logOut}=useAuth();
-
+  
 
   const handleSignOut=()=>{
     logOut()
@@ -18,9 +18,11 @@ const Navbar = () => {
   const navLinks = (
     <>
     <li ><Link className='font-bold text-orange-400' to='/'>Home</Link></li>
-    <li ><Link className='font-bold text-orange-400' to='/camp-details/:id'>Camp Details</Link></li>
     <li ><Link className='font-bold text-orange-400' to='/availableCamps'>Available Camps</Link></li>
-    <li ><Link className='font-bold text-orange-400' to='/dashboard'>Dashboard</Link></li>
+    <li ><Link className='font-bold text-orange-400' to='/dashboard'>Dashboard</Link></li> 
+    
+   
+    
     </>
   );
 

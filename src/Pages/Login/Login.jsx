@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Authcontext } from './../../Providers/AuthProviders';
-import { Swal } from 'sweetalert2';
+import  Swal  from 'sweetalert2';
 import SocialLogin from "../../Components/SocialLogin/SocialLogin";
 
 
@@ -49,33 +49,7 @@ const handleLogin = (e) => {
     });
   };
 
-const handleGoogle =(e)=>{
-  e.preventDefault();
-  const form = new FormData(e.currentTarget);
-  const email = form.get("email");
-  const password = form.get("password");
-  console.log(email, password);
-  
-  
-//   googleSignIn()
-//   .then(result =>{
-//     console.log(result.user);
-      
-//     // navigate after login
-//     navigate(location?.state ? location.state : '/');
-//     Swal.fire({
-//       title: "Good job!",
-//       text: "Your login successfully!",
-//       icon: "success",
-//     });
-//     e.target.reset();
-      
-//   })
-//   .catch(error=>console.error(error))
-  
 
-
-}
 
 
 
