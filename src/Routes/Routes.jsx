@@ -37,12 +37,12 @@ export const router = createBrowserRouter([
         path: "/camp-details/:id",
         element: <CampDetails></CampDetails>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/addcamp/${params.id}`),
+          fetch(`https://asaigntment-twelve-server.vercel.app/addcamp/${params.id}`),
       },
       {
         path: "/availableCamps",
         element: <AvailableCamps></AvailableCamps>,
-        loader: () => fetch("http://localhost:5000/addcamp"),
+        loader: () => fetch("https://asaigntment-twelve-server.vercel.app/addcamp"),
       },
 
       {
@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
         path: "/update/:id",
         element: <Update></Update>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/joincamp/${params?.id}`),
+          fetch(`https://asaigntment-twelve-server.vercel.app/joincamp/${params?.id}`),
       },
     ],
   },

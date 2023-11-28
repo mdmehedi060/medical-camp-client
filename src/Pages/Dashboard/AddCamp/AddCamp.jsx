@@ -30,7 +30,7 @@ const AddCamp = () => {
     console.log(newCamp);
 
     //    send data to the server
-    fetch("http://localhost:5000/addcamp", {
+    fetch("https://asaigntment-twelve-server.vercel.app/addcamp", {
       method: "POST",
       headers: {
         "content-type": "application/json",

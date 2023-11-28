@@ -7,7 +7,7 @@ const Camps = () => {
     const [camps,setCamps]=useState();
 const [isShow,setIsShow]= useState(false)
     useEffect(()=>{
-        fetch('http://localhost:5000/addcamp')
+        fetch('https://asaigntment-twelve-server.vercel.app/addcamp')
         .then(res=>res.json())
         .then(data=>setCamps(data))
     },[])
