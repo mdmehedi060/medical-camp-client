@@ -13,7 +13,7 @@ const Login = () => {
 const location = useLocation();
 console.log('location inthe login page',location);
 const navigate =useNavigate();
- 
+
 const handleLogin = (e) => {
     e.preventDefault();
     // console.log(e.currentTarget);

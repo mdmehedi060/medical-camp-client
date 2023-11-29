@@ -53,6 +53,8 @@ const ManageCamp = () => {
           }
       });
     }
+
+    
     return (
         <div>
         <div className="flex justify-evenly">

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import useCamp from "../../../assets/Hooks/useCamp";
 import useAxiosSecure from './../../../assets/Hooks/useAxiosSecure';
 import Swal from "sweetalert2";
-import { FaTrashAlt } from 'react-icons/fa';
+
 
 
 const RegisteredCamp = () => {

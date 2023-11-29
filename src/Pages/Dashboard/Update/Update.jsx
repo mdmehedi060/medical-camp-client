@@ -7,22 +7,36 @@ import SectionTitle from '../../../Components/SectionTitle/SectionTitle';
 const Update = () => {
     const update = useLoaderData();
     console.log(update);
-    const { _id,title,category,shortdiscription,longdiscription,photo } = update;
+    const { _id,campName,image,campFees,scheduledDateTime,venueLocation,specializedServices,healthcareProfessionals,targetAudience,comprehensiveDescription } = update;
     
 
 
-    const handleUpdateBlog=event=>{
-        event.preventDefault();
-    
-        const form=event.target;
-    
-        const title= form.title.value;
-    const category= form.category.value;
-    const shortdiscription= form.shortdiscription.value;
-    const longdiscription= form. longdiscription.value;
-    const photo= form.photo.value;
-   const updateCamp={title,category,shortdiscription,longdiscription,photo}
-   console.log(updateCamp);
+    const handleUpdateCamp=event=>{
+      event.preventDefault();
+
+      const form = event.target;
+  
+      const campName = form.campName.value;
+      const campFees = form.campFees.value;
+      const scheduledDateTime = form.scheduledDateTime.value;
+      const venueLocation = form.venueLocation.value;
+      const specializedServices = form.specializedServices.value;
+      const healthcareProfessionals = form.healthcareProfessionals.value;
+      const targetAudience = form.targetAudience.value;
+      const comprehensiveDescription = form.comprehensiveDescription.value;
+      const photo = form.photo.value;
+      const updateCamp = {
+          campName,
+          campFees,
+        scheduledDateTime,
+        venueLocation,
+        photo,
+        specializedServices,
+        healthcareProfessionals,
+        targetAudience,
+        comprehensiveDescription
+      };
+      console.log(updateCamp);
     
   
 
@@ -49,72 +63,134 @@ const Update = () => {
     return (
        <div className='my-8'>
         <SectionTitle heading={"Update Camp"} subHeading={"Please update This camp"}></SectionTitle>
-         <div className="bg-[#F4F3F0] p-24 mt-6 mb-8">
-        
-        <form onSubmit={handleUpdateBlog}>
-          {/* form name & quantity row */}
+        <div className="bg-[#F4F3F0] p-24 mt-6 mb-8">
+    
+        <form onSubmit={handleUpdateCamp}>
+          {/* form name & fee row */}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2">
               <label className="label">
-                <span className="label-text">Blog Title</span>
+                <span className="label-text">Camp Name</span>
               </label>
               <label className="input-group ">
                 <input
-                  name="title"
+                defaultValue={campName}
+                  name="campName"
                   type="text"
-                  defaultValue={title}
-                  placeholder="Title"
+                  placeholder="Camp Name"
                   className="input input-bordered w-full"
                 />
               </label>
             </div>
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
-                <span className="label-text">Category</span>
+                <span className="label-text">Camp Fees</span>
               </label>
               <label className="input-group">
                 <input
-                  name="category"
+                defaultValue={campFees}
+                  name="campFees"
                   type="text"
-                  defaultValue={category}
-                  placeholder="Category"
+                  placeholder="Camp Fees"
                   className="input input-bordered w-full"
                 />
               </label>
             </div>
           </div>
-          {/* form supllier & test row */}
+          {/* form Date & Time & Location row */}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2">
               <label className="label">
-                <span className="label-text">Short Discription</span>
+                <span className="label-text">Date & Time</span>
               </label>
               <label className="input-group ">
                 <input
-                  name="shortdiscription"
+                defaultValue={scheduledDateTime}
+                  name="scheduledDateTime"
                   type="text"
-                  defaultValue={shortdiscription}
-                  placeholder="Short Discription"
+                  placeholder="Date & Time"
                   className="input input-bordered w-full"
                 />
               </label>
             </div>
             <div className="form-control md:w-1/2 ml-4">
               <label className="label">
-                <span className="label-text">Long Discription</span>
+                <span className="label-text">Venue Location</span>
               </label>
               <label className="input-group">
                 <input
-                  name="longdiscription"
+                defaultValue={venueLocation}
+                  name="venueLocation"
                   type="text"
-                  defaultValue={longdiscription}
-                  placeholder="Long Discription"
+                  placeholder="Venue Location"
                   className="input input-bordered w-full"
                 />
               </label>
             </div>
           </div>
-         
+          {/* form Services & Healthcare Professionals row */}
+          <div className="md:flex mb-8">
+            <div className="form-control md:w-1/2">
+              <label className="label">
+                <span className="label-text">Specialized Services</span>
+              </label>
+              <label className="input-group ">
+                <input
+                defaultValue={specializedServices}
+                  name="specializedServices"
+                  type="text"
+                  placeholder="Specialized Services"
+                  className="input input-bordered w-full"
+                />
+              </label>
+            </div>
+            <div className="form-control md:w-1/2 ml-4">
+              <label className="label">
+                <span className="label-text">Healthcare Professionals</span>
+              </label>
+              <label className="input-group">
+                <input
+                defaultValue={healthcareProfessionals}
+                  name="healthcareProfessionals"
+                  type="text"
+                  placeholder="Healthcare Professionals"
+                  className="input input-bordered w-full"
+                />
+              </label>
+            </div>
+          </div>
+          {/* form targetAudience & Healthcare Professionals row */}
+          <div className="md:flex mb-8">
+            <div className="form-control md:w-1/2">
+              <label className="label">
+                <span className="label-text">Target Audience</span>
+              </label>
+              <label className="input-group ">
+                <input
+                defaultValue={targetAudience}
+                  name="targetAudience"
+                  type="text"
+                  placeholder="Target Audience"
+                  className="input input-bordered w-full"
+                />
+              </label>
+            </div>
+            <div className="form-control md:w-1/2 ml-4">
+              <label className="label">
+                <span className="label-text">Comprehensive Description</span>
+              </label>
+              <label className="input-group">
+                <input
+                defaultValue={comprehensiveDescription}
+                  name="comprehensiveDescription"
+                  type="text"
+                  placeholder="Comprehensive Description"
+                  className="input input-bordered w-full"
+                />
+              </label>
+            </div>
+          </div>
+
           {/* form photo row */}
           <div className="mb-8">
             <div className="form-control md:w-1/2">
@@ -123,20 +199,24 @@ const Update = () => {
               </label>
               <label className="input-group ">
                 <input
+                defaultValue={image}
                   name="photo"
                   type="text"
-                  defaultValue={photo}
                   placeholder="Photo RRL"
                   className="input input-bordered w-full"
                 />
               </label>
             </div>
-         
           </div>
-          
-          <input className="btn btn-block bg-orange-400 text-white" type="submit" value="Update Blog"  />
+
+          <input
+            className="btn btn-block bg-orange-400 text-white"
+            type="submit"
+            value="Submit"
+          />
         </form>
       </div>
+        
        </div>
     );
 };
